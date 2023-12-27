@@ -147,7 +147,7 @@ assign r1load=(din[3:2] == 2'b01&&add3)||(din[3:2] == 2'b01&&inc2)||(din[3:2] ==
 assign r2load=(din[3:2] == 2'b10&&add3)||(din[3:2] == 2'b10&&inc2)||(din[3:2] == 2'b10&&mvr1)||(din[3:2] == 2'b10&&lad5)||(din[3:2] == 2'b10&&mvrd2)||(din[3:2] == 2'b10&&sub3)||
 (din[3:2] == 2'b10&&and3)||(din[3:2] == 2'b10&&or3)||(din[3:2] == 2'b10&&dec2)||(din[3:2] == 2'b10&&shl2)||(din[3:2] == 2'b10&&not2);
 
-assign r3load=(din[3:2] == 2'b11&&add3)||(din[3:2] == 2'b11&&inc2)||(din[3:2] == 2'b01&&mvr1)||(din[3:2] == 2'b11&&lad5)||(din[3:2] == 2'b11&&mvrd2)||(din[3:2] == 2'b11&&sub3)||
+assign r3load=(din[3:2] == 2'b11&&add3)||(din[3:2] == 2'b11&&inc2)||(din[3:2] == 2'b11&&mvr1)||(din[3:2] == 2'b11&&lad5)||(din[3:2] == 2'b11&&mvrd2)||(din[3:2] == 2'b11&&sub3)||
 (din[3:2] == 2'b11&&and3)||(din[3:2] == 2'b11&&or3)||(din[3:2] == 2'b11&&dec2)||(din[3:2] == 2'b11&&shl2)||(din[3:2] == 2'b11&&not2);
 
 assign trload=lad2||jmp2||(z==1'b0&&jrnz2)||(z==1'b1&&jmpz2)||sto2;
